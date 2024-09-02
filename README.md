@@ -14,7 +14,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/ShaileshGodghase/Ace_Interview?color=dark-green) ![Forks](https://img.shields.io/github/forks/ShaileshGodghase/Ace_Interview?style=social) ![Stargazers](https://img.shields.io/github/stars/ShaileshGodghase/Ace_Interview?style=social) ![License](https://img.shields.io/github/license/ShaileshGodghase/Ace_Interview) 
+ 
 
 ## About The Project
 
