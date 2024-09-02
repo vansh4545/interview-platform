@@ -10,14 +10,7 @@
     Ace Interview isn't like the rest. All of the interviews, meetings, and more can be done on their device, whenever they want, through a one-stop-shop.
     <br/>
     <br/>
-    <a href="https://github.com/ShaileshGodghase/Ace_Interview"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/ShaileshGodghase/Ace_Interview">View Demo</a>
-    .
-    <a href="https://github.com/ShaileshGodghase/Ace_Interview/issues">Report Bug</a>
-    .
-    <a href="https://github.com/ShaileshGodghase/Ace_Interview/issues">Request Feature</a>
+    
   </p>
 </p>
 
@@ -53,39 +46,9 @@ This is an example of how to list things you need to use the software and how to
 
 * node.js (Download [Here](https://nodejs.org/en/))
 
-### Installation
-
-1. Clone this repository
-```sh
-git clone https://github.com/ShaileshGodghase/Ace_Interview.git
-```
-
-2. Install NPM Packages
-```sh
-npm install
-```
-
-3. Run command
-```sh
-node server.js
-```
 
 
-## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/ShaileshGodghase/Ace_Interview/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/ShaileshGodghase/Ace_Interview/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
-
-### Creating A Pull Request
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
@@ -93,7 +56,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/ShaileshGodg
 
 ## Authors
 
-* [Shailesh Godghase](https://www.linkedin.com/in/shaileshgodghase/)
-* [Atharva Nidhonkar](https://www.linkedin.com/in/atharva-nidhonkar-51476a1a5/)
-* [Jay Lokhande](https://www.linkedin.com/in/jay-lokhande-003a76200/)
-* [Rajwardhan Jadhav](https://www.linkedin.com/in/rajwardhan-jadhav-b8662220a/)
+* [Vansh Gupta](https://www.linkedin.com/in/vansh-gupta-837563223/)
