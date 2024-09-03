@@ -156,16 +156,27 @@ inviteButton.addEventListener("click", (e) => {
    );
 });
 endBtn.addEventListener("click", () => {
-   if (endBtn.classList.contains("bg2")) {
-      endBtn.classList.add("bg-red-600");
-      endBtn.classList.remove("bg2");
-      endBtn.innerHTML = `<i class="fa-regular text-white fa-phone-slash"></i>`;
-   } else {
-      endBtn.classList.add("bg2");
-      endBtn.classList.remove("bg-red-600");
-      endBtn.innerHTML = `<i class="fa-regular text-white fa-phone"></i>`;
+   // Close the WebSocket connection
+   if (socket.readyState === WebSocket.OPEN) {
+     socket.close();
    }
-});
+   if (myVideoStream) {
+      myVideoStream.getTracks().forEach(track => track.stop());
+   }
+   // Optional: Redirect or perform other actions after closing the connection
+   window.location.href = "/";
+ });
+// endBtn.addEventListener("click", () => {
+//    if (endBtn.classList.contains("bg2")) {
+//       endBtn.classList.add("bg-red-600");
+//       endBtn.classList.remove("bg2");
+//       endBtn.innerHTML = `<i class="fa-regular text-white fa-phone-slash"></i>`;
+//    } else {
+//       endBtn.classList.add("bg2");
+//       endBtn.classList.remove("bg-red-600");
+//       endBtn.innerHTML = `<i class="fa-regular text-white fa-phone"></i>`;
+//    }
+// });
 
 const CodeMirrorCode = document.querySelector('.CodeMirror-code')
 socket.on("createMessage", (message, userName) => {
