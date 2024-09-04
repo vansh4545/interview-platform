@@ -14,7 +14,7 @@ myVideo.id = user;
 var peer = new Peer(undefined, {
    path: "/peerjs",
    host: "/",
-   port: "3000",
+   port: "",
    config: {
       'iceServers': [
          { url: 'stun:stun01.sipphone.com' },
