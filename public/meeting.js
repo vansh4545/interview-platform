@@ -6,37 +6,15 @@ const modal = document.getElementById('modal');
 const modalBtn = document.getElementById('modalButton');
 const meetingWrapper = document.getElementById('meetingWrapper');
 myVideo.muted = true;
-
-
-// function getUserName() {
-//    var input = prompt("Enter your name");
-//    if (input == null) {
-//       getUserName();
-//    }
-//    return input;
-// }
-// let user = getUserName();
-
 let user = prompt("Enter your name");
 
 myVideo.id = user;
-// modalBtn.addEventListener("click", () => {
-//    modal.classList.remove("flex");
-//    modal.classList.add("hidden");
 
-//    meetingWrapper.classList.remove("hidden");
-//    meetingWrapper.classList.add("block");
-
-//    user = prompt("Enter your name");
-// body.requestFullscreen({ navigationUI: "show" }).then(() => { }).catch((err) => {
-//    alert(`An error occurred while trying to switch into fullscreen mode: ${err.message} (${err.name})`);
-// });
-// });
 
 var peer = new Peer(undefined, {
    path: "/peerjs",
    host: "/",
-   port: "443",
+   port: "3000",
    config: {
       'iceServers': [
          { url: 'stun:stun01.sipphone.com' },
@@ -75,6 +53,7 @@ navigator.mediaDevices
          call.answer(stream);
          const video = document.createElement("video");
          call.on("stream", (userVideoStream) => {
+            
             addVideoStream(video, userVideoStream);
          });
       });
@@ -86,11 +65,13 @@ const connectToNewUser = (userId, stream) => {
    const call = peer.call(userId, stream);
    const video = document.createElement("video");
    call.on("stream", (userVideoStream) => {
+      console.log("Received user video stream");
       addVideoStream(video, userVideoStream);
    });
 };
 peer.on("open", (id) => {
    console.log("Open");
+   console.log(user);
    socket.emit("join-room", ROOM_ID, id, user);
 });
 const addVideoStream = (video, stream) => {

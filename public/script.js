@@ -59,6 +59,7 @@ const connectToNewUser = (userId, stream) => {
 };
 
 peer.on("open", (id) => {
+  console.log(user);
   socket.emit("join-room", ROOM_ID, id, user);
 });
 
